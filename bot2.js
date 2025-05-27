@@ -1,8 +1,9 @@
 const TelegramBot = require('node-telegram-bot-api');
 const fs = require('fs');
+import { mykey } from './key';
 
 // Thay thế bằng token của bạn
-const token = '7986755919:AAGW97C3zS02OzPdpWFfOetx6ZJ7eHvaUcI';
+const token = mykey
 const bot = new TelegramBot(token, {polling: true});
 
 // ID nhóm bạn muốn lưu tin nhắn
